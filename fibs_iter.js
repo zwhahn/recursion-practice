@@ -1,4 +1,4 @@
-const fib_array = [];
+let fib_array = [];
 
 function fibs(n) {
     if (n == 0) {
@@ -20,3 +20,11 @@ function fibs(n) {
     }
     return fib_array;
 }
+
+console.log(fibs(0));
+console.log(fibs(1));
+console.log(fibs(2));
+console.log(fibs(3));
+console.log(fibs(4));
+console.log(fibs(5));
+console.log(fibs(8));
