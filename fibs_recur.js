@@ -1,7 +1,14 @@
 function fibs(n) {
-    if (n <= 2) {
+    if (n == 0) {
+        return []
+    } 
+    else if (n == 1) {
+        return [0]
+    } 
+    else if (n == 2) {
         return [0, 1]
-    } else {
+    } 
+    else {
         let previous = fibs(n-1)
         let lengthOfPrevious = previous.length
         let nextNumber = previous[lengthOfPrevious-1] + previous[lengthOfPrevious-2]
