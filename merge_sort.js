@@ -1,5 +1,5 @@
 function mergeSort(array){
-    console.log(array)
+    // console.log(array)
     if (array.length <= 1) {
         return array;
     } 
@@ -27,6 +27,9 @@ function mergeSort(array){
             } else if (sortedLeft[i] > sortedRight[j])  {
                 merged.push(sortedRight[j]);
                 j++;
+            } else if (sortedLeft[i] == sortedRight[j])  {
+                merged.push(sortedLeft[i]);
+                i++;
             }
         }
         while (i < sortedLeft.length) {
@@ -43,4 +46,9 @@ function mergeSort(array){
 
 }
 
-console.log(mergeSort([5,2,4,1,3]));
+
+console.log(mergeSort([]))
+console.log(mergeSort([73]))
+console.log(mergeSort([1, 2, 3, 4, 5]))
+console.log(mergeSort([3, 2, 1, 13, 8, 5, 0, 1]))
+console.log(mergeSort([105, 79, 100, 110]))
